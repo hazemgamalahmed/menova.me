@@ -1,0 +1,389 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* start nav bar main */
+.upper-bar{
+    /* background-color: rgba(61, 192, 83, 0.808); */
+    background-color: orange;
+    color:#FFF;
+    padding:10px;
+}
+.upper-bar span{
+    margin-left:10px;
+}
+
+.any-data-up{
+    color:#FFF;
+    text-transform:capitalize;
+}
+.any-data-up span{
+    list-style: none;
+    line-height:1.7;
+}
+.any-data-up span a{
+    text-decoration: none;
+    color:#FFF;
+}
+.any-data-up span a:hover{
+    text-decoration: none;
+    color:#FFF;
+    font-size: 102%;
+}
+
+/* end nav bar main */
+/* start navbar brand */
+.new-serve{
+    /* color: rgba(61, 192, 83, 0.808); */
+    color : orange;
+}
+.navbar-nav, .navbar-link{
+    font-size:16px;
+    /* font-weight:bold; */
+    text-transform:uppercase;
+}
+/* end navbar brand */
+/* start cinema style */
+.cinema{
+    min-height:400px;
+    position:relative;
+    background-image: url('../../public/assets/forpa.jpg');
+    background-size:cover;
+
+}
+.overlay{
+    background-color:rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:1;
+}
+.cinema .header-information{
+    z-index:2;
+    top:50%;
+    color:#FFF;
+    text-transform: capitalize;
+    left:50%;
+    line-height:1.6;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.cinema .header-information p {
+    line-height:1.6 ;
+}
+/* end cinema style */
+
+/* start who us */
+.who-us{
+    /* background-color: #DDD; */
+    margin-top:70px;
+    margin-bottom:40px;
+    /* border-radius:10% 10% 10% 20%; */
+}
+.who-us .text-data{
+    /* color: rgba(61, 192, 83, 0.808); */
+    /* font-weight:bold; */
+    
+}
+/* end who us */
+/* start providers */
+.providers{
+    margin-bottom:70px;
+    overflow: hidden;
+}
+.providers img{
+    width: 100%;
+    height:100%;
+    transition:all 1s;
+}
+.providers h1{
+    text-align:center;
+    text-transform:capitalize;
+}
+.providers .my-image{
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width:100%;
+    display: inline-block;
+    height:100%;
+}
+.providers .my-image .caption{
+    background-color:rgba(0,51,153,0.2);
+    position: absolute;
+    top:0;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    left:100%;
+    transition: all 1s;
+}
+.providers .my-image:hover .caption{
+    left:0;
+    transform:rotate(-360deg);
+}
+.providers .my-image .caption h3{
+    color:#FFF;
+    position:relative;
+    transition-delay:2s;
+    overflow: hidden;
+    top:50%;
+}
+/* end providers */
+/* start our vision */
+.our-vision{
+    /* background-color: aqua; */
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.our-vision .vision{
+    margin-top: 50px;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+}
+.our-vision .vision-img img{
+    border-radius: 100%;
+    box-shadow: #EEE 10px 2px 10px 2px;
+}
+/* end our vision */
+/* start footer  */
+footer{
+    margin-top:70px;
+    /* height:300px; */
+    background-color: orange;
+}
+/* end footer */
+.any-data{
+    margin-top:70px;
+    color:#FFF;
+    text-transform:capitalize;
+}
+.any-data ul li{
+    list-style: none;
+    line-height:1.7;
+}
+.any-data ul li a{
+    text-decoration: none;
+    color:#FFF;
+}
+.my-form{
+    /* text-align:center; */
+    position: relative;
+    margin-top:20px;
+}
+.my-form .form-me{
+    
+    position: relative;
+}
+.my-form .form-me .forms{
+   margin-left: 200px;
+}
+.my-form .form-me h1{
+    text-align:center;
+}
+.welcome{
+    width:600px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.my-btn{
+    width:200px;
+    padding:10px;
+    background: none;
+    color:#000;
+    font-weight: bold;
+    text-transform:capitalize;
+    border:2px solid orange;
+    transition: all 1s;
+}
+.my-btn:hover{
+    background-color: orange;
+    color:#FFF;
+}
+hr{
+    color:#000;
+    height:3px;
+    font-weight:bold;
+}
+.rights{
+    text-align:center;
+    color:#FFF;
+
+}
+/* start our values */
+.our-values{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.our-values h1{
+    text-align:center;
+    color:orange;
+    text-transform: capitalize;
+    margin-bottom:40px;
+}
+.our-values .value-ex{
+    margin-top:20px;
+}
+.our-values .value-ex ul li{
+    list-style: none;
+    margin:10px;
+
+    text-align:center;
+}
+.ser-val{
+    background-color: #8A2BE2;
+    color:#FFF;
+    text-align:center;
+    font-weight:bold;
+    margin:20px;
+    transition: all 1s;
+}
+.ser-val:hover{
+    background-color:orchid;
+}
+.our-values .img-values{
+    width:300px;
+    height:200px;
+    margin:30px;
+}
+.our-values .img-values h3{
+    text-align:center;
+    transition:all 0.5s ease-in-out;
+    text-transform: uppercase;
+    
+}
+.our-values .img-values img{
+    width:100%;
+    height:100%;
+}
+.our-values .img-values:hover h3{
+    color:orange;
+}
+/* end our values */
+/* start our tools */
+.our-tools{
+    margin-top:50px;
+    margin-bottom:30px;
+    height:300px;
+    padding:10px;
+    position: relative;
+    background-color: orange;
+}
+.our-tools .conten-tools{
+    position: absolute;
+    text-align:center;
+    top:100px;
+}
+.our-tools .conten-tools p{
+    color:#FFF;
+    font-weight:bold;
+}
+.my-btn-learn{
+    width:200px;
+    padding:10px;
+    background: none;
+    color:#FFF;
+    font-weight: bold;
+    text-transform:capitalize;
+    border:2px solid #FFF;
+    transition: all 1s;
+}
+.my-btn-learn:hover{
+    background-color:#FFF;
+    color:orange;
+}
+/* end our tools */
+/* start support menaova */
+.support-menaova{
+    margin-top:50px;
+    margin-bottom:50px;
+
+}
+.support-menaova h1{
+    text-align:center;
+}
+.support-menaova .support-me ul{
+    margin-top: 30px;
+}
+.support-menaova .support-me ul li{
+    list-style: none;
+    text-align: center;
+}
+.back-face{
+    background-color: orange;
+    color:#FFF;
+    border-radius: 20px;
+    padding:10px;
+    margin:10px;
+    transition: all 1s;
+}
+.back-face:hover{
+    background-color: orangered;
+}
+/* end support menaova */
+/* start ser content */
+.ser-contact{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+/* end ser content */
+/* start about us */
+.about-us{
+    
+    position:relative;
+    text-align:center;
+    margin-top:70px;
+    margin-bottom:60px;
+    font-weight:bold;
+    color:#FFF;
+    background-image: url('../../public/assets/2.jpg');
+    background-size:cover;
+    height:300px;
+}
+.about-us .about-me{
+    top:50%; 
+    color:#FFF;
+}
+/* end about us */
+/* start choice */
+.choice-val{
+    margin-top:70px;
+    margin-bottom:70px;
+}
+/* end choice */
+.fields{
+    margin-top:70px;
+    margin-bottom:70px;
+}
+.fields h1{
+    text-align:center;
+}
+.fields .text-cat{
+    text-align:center;
+}
+
+.work-free{
+    margin-top:70px;
+    margin-bottom:70;
+}
+.work-free h1{
+    text-align:center;
+}
+.map-container-5{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-5 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}

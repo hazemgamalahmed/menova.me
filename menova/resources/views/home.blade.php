@@ -9,9 +9,9 @@
                 <p>I hope you are will this the page for data of menova site</p>
             </div>
             <ul>
-                <li><a href="admin/serve">It Services Clients</a></li>
-                <li><a href="admin/solution">It solution Clients</a></li>
-                <li><a href="admin/digital">It digital markiting Clients</a></li>
+                <li><a href="{{url('admin/serve')}}">It Services Clients</a></li>
+                <li><a href="{{url('admin/solution')}}">It solution Clients</a></li>
+                <li><a href="{{url('admin/digital')}}">It digital markiting Clients</a></li>
             </ul>
         </div>
 

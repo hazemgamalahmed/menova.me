@@ -21,6 +21,8 @@ Route::get('contact', function () {
 Route::get('test/1', 'newsController@test');
 Route::post('insert/customer', 'customerController@insertCustomer');
 Route::post('insert/serve', 'servicesController@insertServiceOrder');
+Route::post('insert/free', 'freelanceController@addFreeLancer');
+Route::post('insert/digital', 'digitalController@insertDigitalClients');
 Route::post('insert/developers', 'developmentController@insertDevelopment');
 Route::get('about', function () {
     return view('About');
@@ -46,6 +48,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware'=>'menova'], function(){
 	Route::get('admin/serve', 'servicesController@servAdmin');
 	Route::get('admin/solution', 'developmentController@getClientsOfDevelopment');
+	Route::get('admin/digital', 'digitalController@fetchAllDigits');
 });
 Route::group(['middleware'=>'guest'], function(){
 

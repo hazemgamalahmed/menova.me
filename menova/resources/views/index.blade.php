@@ -67,10 +67,9 @@
                       <div class="col-lg-4 col-sm-12 col-md-6">
                         <div class="my-image">
                             <img class = "img-fluid" src="{{url('../public/assets/developIt.jpg')}}" />
-                            <!-- <a href = "#"><div class = "caption">
-                                <h3>IT Software Development</h3>
-                            </div></a> -->
+                            
                         </div>
+
                     </div>
                     <div class="col-lg-4 col-sm-12 col-md-6">
                         <div class="my-image">

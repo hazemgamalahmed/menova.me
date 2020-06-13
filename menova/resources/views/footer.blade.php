@@ -3,7 +3,7 @@
                   <div class = "row">
                       <div class="col-lg-4 col-md-4 col-sm-12">
                           <div class="any-data">
-                              <h4>You Can Contact Us</h4>
+                              <h4>Contact Us</h4>
                               <ul>
                                   <li>info@menaova.me</li>
                                   <li>+2 0100101010</li>

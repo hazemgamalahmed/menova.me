@@ -104,7 +104,7 @@
               <div class="overlay"></div>
               <div class="container">
                   <div class = "header-information">
-                  <h1>menaova serves is a best place to serve you in IT solution, Digital Marketing and IT Development</h1>
+                  <h1>menova services is the best place to serve you in IT solution, Digital Marketing and IT Development</h1>
                   </div>
               </div>
           </div>

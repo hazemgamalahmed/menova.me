@@ -20,7 +20,11 @@ class CreateFreelancesTable extends Migration
             $table->string('phone');
             $table->mediumText('files');
             $table->string('major');
-            $table->longText('message');
+            $table->string('technologies');
+            $table->string('about');
+            $table->string('demo');
+            $table->string('project_name');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

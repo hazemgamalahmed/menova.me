@@ -10,7 +10,7 @@
                           </div>
                       </div>
                       <div class = "col-lg-6">
-                          <img class="img-fluid" src="assets/site-img20.png" />
+                          <img class="img-fluid" src="{{url('../public/assets/site-img20.png')}}" />
                       </div>
                   </div>
               </div>
@@ -53,30 +53,30 @@
                       <div class="col-lg-4 col-sm-12 col-md-6">
                           <div class="my-image">
                               <img class = "img-fluid" src="{{url('../public/assets/itsol.jpg')}}" />
-                              <!-- <a href = "#"><div class = "caption">
-                                  <h3>IT Services</h3>
-                              </div></a> -->
-                           <div style="display:inline-block">
-                                  <p>welcome</p>
-                              </div>
-                          </div>
+                              <a href = "{{url('services')}}"><div class = "caption">
+                                  <h3>IT Development</h3>
+                              </div></a>
+                        
                           
                          
                       </div>
                       
+                          </div>
                       <div class="col-lg-4 col-sm-12 col-md-6">
                         <div class="my-image">
                             <img class = "img-fluid" src="{{url('../public/assets/developIt.jpg')}}" />
-                            
+                             <a href = "{{url('Development')}}"><div class = "caption">
+                                  <h3>IT support</h3>
+                              </div></a>
                         </div>
 
                     </div>
                     <div class="col-lg-4 col-sm-12 col-md-6">
                         <div class="my-image">
                             <img class = "img-fluid" src="{{url('../public/assets/Digital.jpg')}}" />
-                            <!-- <a href = "#"><div class = "caption">
+                            <a href = "{{url('Digital')}}"><div class = "caption">
                                 <h3>Digital Marketing</h3>
-                            </div></a> -->
+                            </div></a>
 
                         </div>
                     </div>

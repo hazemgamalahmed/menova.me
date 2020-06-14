@@ -31,4 +31,24 @@ class digitalController extends Controller
     	$all_degets = Digital::orderBy('id', 'desc')->paginate();
     	return view('adminDig', ['degets' => $all_degets]);
     }
+    public function fetchdeletedData()
+    {
+        $all_deletes = Digital::onlyTrashed()->orderBy('id', 'desc')->paginate();
+        return view('recyleDM', ['dmdels'=>$all_deletes]);
+    }
+
+    public function deleteDigital($id=null)
+    {
+        if($id != null){
+            $del = Digital::find($id);
+            $del->delete();
+        }elseif(request()->has('id') and request()->has('softdelete')){
+           Digital::destroy(request('id')); 
+        }elseif(request()->has('restore') and request()->has('id')){
+            Digital::whereIn('id', request('id'))->restore();
+        }
+
+
+        return back();
+    }
 }

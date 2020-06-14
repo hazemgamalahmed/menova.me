@@ -49,6 +49,16 @@ Route::group(['middleware'=>'menova'], function(){
 	Route::get('admin/serve', 'servicesController@servAdmin');
 	Route::get('admin/solution', 'developmentController@getClientsOfDevelopment');
 	Route::get('admin/digital', 'digitalController@fetchAllDigits');
+    Route::get('admin/free', 'freelanceController@fetchAllFree');
+    Route::get('dels/data', 'digitalController@fetchdeletedData');
+    Route::delete('delete/digital', 'digitalController@deleteDigital');
+    Route::get('dels/serve', 'servicesController@fetchDelsData');
+    Route::delete('del/serve', 'servicesController@deleteData');
+    Route::get('dels/serve', 'servicesController@fetchDelsData');
+    Route::delete('delete/free', 'freelanceController@deleteFreeLance');
+    Route::get('dels/free', 'freelanceController@fetchdelfree');
+    Route::delete('del/sol', 'developmentController@deleteSol');
+    Route::get('dels/sol', 'developmentController@fetchAllDelsSol');
 });
 Route::group(['middleware'=>'guest'], function(){
 

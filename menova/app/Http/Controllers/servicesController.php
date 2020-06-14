@@ -31,4 +31,20 @@ class servicesController extends Controller
         $all_services = Services::orderBy('id', 'desc')->paginate();
         return view('adminServ', ['services' => $all_services]);
     }
+    public function fetchDelsData(){
+        $all_dels = Services::onlyTrashed()->orderBy('id', 'desc')->paginate();
+        return view('recyleSer', ['deels'=>$all_dels]);
+    }
+
+    public function deleteData($id=null){
+        if($id != null){
+            $del = Services::find($id);
+            $del->delete();
+        }elseif(request()->has('id') and request()->has('softdelete')){
+            Services::destroy(request('id'));
+        }elseif(request()->has('id') and request()->has('restore')){
+            Services::whereIn('id', request('id'))->restore();
+        }
+        return back();
+    }
 }

@@ -12,6 +12,7 @@
                 <li><a href="{{url('admin/serve')}}">It Services Clients</a></li>
                 <li><a href="{{url('admin/solution')}}">It solution Clients</a></li>
                 <li><a href="{{url('admin/digital')}}">It digital markiting Clients</a></li>
+                <li><a href="{{url('admin/free')}}">IT Freelancer</a></li>
             </ul>
         </div>
 

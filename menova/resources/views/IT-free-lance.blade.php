@@ -7,7 +7,7 @@
         <div class = "row">
             <div class = "col-lg-4 col-md-4 col-sm-12">
                 <div class="free-cat">
-                    <img src="assets/Digital.jpg" />
+                    <img src="{{url('../public/assets/Digital.jpg')}}" />
                 </div>
                 <div class = "text-cat">
                     <a href="#">healthy</a>
@@ -15,7 +15,7 @@
             </div>
             <div class = "col-lg-4 col-md-4 col-sm-12">
                 <div class="free-cat">
-                    <img src="assets/Digital.jpg" />
+                    <img src="{{url('../public/assets/Digital.jpg')}}" />
                 </div>
                 <div class = "text-cat">
                     <a href="#">educ</a>
@@ -23,7 +23,7 @@
             </div>
             <div class = "col-lg-4 col-md-4 col-sm-12">
                 <div class="free-cat">
-                    <img src="assets/Digital.jpg" />
+                    <img src="{{url('../public/assets/Digital.jpg')}}" />
                 </div>
                 <div class = "text-cat">
                     <a href="#">design location</a>
@@ -42,7 +42,7 @@
         <div class = "row">
             <div class = "col-lg-6 col-md-12">
                 <div class="last-free">
-                    <img src = "assets/Digital.jpg" />
+                    <img src = "{{url('../public/assets/Digital.jpg')}}" />
                 </div>
                 <div class="free-job">
                     <a href="#">contact app</a>
@@ -50,7 +50,7 @@
             </div>
             <div class = "col-lg-6 col-md-12">
                 <div class="last-free">
-                    <img src = "assets/Digital.jpg" />
+                    <img src = "{{url('../public/assets/Digital.jpg')}}" />
                 </div>
                 <div class="free-job">
                     <a href="#">contact app</a>
@@ -90,10 +90,56 @@
                               <option value="android">android developer</option>
                               <option value="Ios">IOS developer</option>
                               <option value="Digital">Digital marketing</option>
-                              <option value="it-sup">IT-Support</option>
+                              <option value="IT-Support">IT-Support</option>
+                              <option value="photoshop">photoshop</option>
+                              <option value="graphic">graphic designer</option>
+                              <option value="Game-Developer">Game Developer</option>
                           </select>
-                          <label>Tell us about your experiance</label>
-                          <textarea name="message" class = "form-control welcome" placeholder="send your message"></textarea>
+                          <label>what is your technologies ?</label>
+                          <select name = "technologies[]" class="form-control" multiple="" display="1">
+                            <option disabled="">web developrt</option>
+                            <option value="PHP">PHP</option>
+                            <option value="C#">C#</option>
+                            <option value="JS">JS</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="Ruby">Ruby</option>
+
+                            <option disabled="">Desktop Developer</option>
+                            <option value="Java">Java</option>
+                            <option value="C#">C#</option>
+                            <option value="C++">C++</option>
+
+                            <option disabled="">Mobile App Developer</option>
+                            <option value="Kotlin">Kotlin</option>
+                            <option value="Dart">Dart</option>
+                            <option value="Objective-c">Objective-c</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="Swift">Swift</option>
+
+
+
+                            <option disabled="">Game Developer</option>
+                            <option value="Java">Java</option>
+                            <option value="C++">C++</option>
+                            <option value="Python">Python</option>
+                            <option value="JS">JS</option>
+                            <option value="Ruby">Ruby</option>
+                            <option value="C">C</option>
+                          </select>
+
+                          <label>what about your project</label>
+                          <select class="form-control" name="about">
+                            <option disabled="">about</option>
+                            <option value="educational">educational</option>
+                            <option value="healthy">healthy</option>
+                            <option value="agriculture">agriculture</option>
+                          </select>
+                          <label>Your Project Demo (if found)</label>
+                          <input class="form-control" type="text" name="demo" value="" placeholder="demo">
+                          <label>Your project Name (if found) </label>
+                          <input class="form-control" type="text" name="project" placeholder="Project Name">
                           <button class="my-btn">submit</button>
                       </form>
                   </div>

@@ -19,6 +19,7 @@ class CreateDigitalsTable extends Migration
             $table->string('email');
             $table->string('phone');
             $table->longText('message');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

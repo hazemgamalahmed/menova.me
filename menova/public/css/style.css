@@ -223,7 +223,7 @@ hr{
 .our-values h1{
     text-align:center;
     color:orange;
-    text-transform: capitalize;
+    text-transfom: capitalize;
     margin-bottom:40px;
 }
 .our-values .value-ex{
@@ -236,7 +236,7 @@ hr{
     text-align:center;
 }
 .ser-val{
-    background-color: #8A2BE2;
+    background-color: orange;
     color:#FFF;
     text-align:center;
     font-weight:bold;
@@ -244,7 +244,8 @@ hr{
     transition: all 1s;
 }
 .ser-val:hover{
-    background-color:orchid;
+    background-color:#FFF;
+    color:orange
 }
 .our-values .img-values{
     width:300px;

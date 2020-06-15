@@ -55,7 +55,7 @@ class freelanceController extends Controller
 
     public function fetchAllFree()
     {
-        $all_free = Freelance::orderBy('id', 'desc')->paginate();
+        $all_free = Freelance::orderBy('id', 'desc')->paginate()->where('about', 'healthy');
         return view('adminfree', ['frees'=> $all_free]);
     }
     public function fetchdelfree()
@@ -74,5 +74,20 @@ class freelanceController extends Controller
         }
 
         return back();
+     }
+     public function healthyData()
+     {
+        $all_healthies = Freelance::orderBy('id', 'desc')->paginate()->where('about', 'healthy');
+        return view('healthyFilter', ['healths' => $all_healthies]);
+     }
+     public function educData()
+     {
+        $all_educs = Freelance::orderBy('id', 'desc')->paginate()->where('about', 'educational');
+        return view('educFilter', ['educs'=>$all_educs]);
+     }
+     public function agriData()
+     {
+        $all_agres = Freelance::orderBy('id', 'desc')->paginate()->where('about', 'agriculture');
+        return view('agriFilter', ['grees' => $all_agres]);
      }
 }

@@ -10,7 +10,7 @@
                     <img src="{{url('../public/assets/Digital.jpg')}}" />
                 </div>
                 <div class = "text-cat">
-                    <a href="#">healthy</a>
+                    <a href="{{url('health/free')}}">healthy</a>
                 </div>
             </div>
             <div class = "col-lg-4 col-md-4 col-sm-12">
@@ -18,7 +18,7 @@
                     <img src="{{url('../public/assets/Digital.jpg')}}" />
                 </div>
                 <div class = "text-cat">
-                    <a href="#">educ</a>
+                    <a href="{{url('educ/free')}}">educ</a>
                 </div>
             </div>
             <div class = "col-lg-4 col-md-4 col-sm-12">
@@ -26,7 +26,7 @@
                     <img src="{{url('../public/assets/Digital.jpg')}}" />
                 </div>
                 <div class = "text-cat">
-                    <a href="#">design location</a>
+                    <a href="{{url('agre/free')}}">agriculture</a>
                 </div>
             </div>
         </div>

@@ -13,7 +13,9 @@
       <th scope="col">phone</th>
       <th scope="col">email</th>
       <th scope="col">major</th>
-      <th scope="col">files</th>
+      <th scope="col">technologies</th>
+      <th scope="col">demo</th>
+      <th scope="col">about</th>
       <th>action</th>
     </tr>
   </thead>
@@ -25,7 +27,9 @@
   		<td>{{$free->email}}</td>
   		<td>{{$free->phone}}</td>
   		<td>{{$free->major}}</td>
-  		<td>{{$free->files}}</td>
+  		<td>{{$free->technologies}}</td>
+  		<td>{{$free->demo}}</td>
+  		<td>{{$free->about}}</td>
       <td>
         <input type="checkbox" name="id[]" value="{{$free->id}}">
       </td>

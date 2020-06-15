@@ -34,7 +34,9 @@
                             <i class="fa fa-envelope" aria-hidden="true"></i> <span>menova@menova.com</span>
                         </div>
                         <div class="col-sm">
-                            <i class="fa fa-smile-o" aria-hidden="true"></i><span>we will be pleased to serve you</span>
+                            <i class="fa fa-smile-o" aria-hidden="true"></i><span>
+                              {{trans('lang.pleased')}}
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -53,40 +55,44 @@
                         <div class="collapse navbar-collapse right" id="main-nav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                        <a class="nav-link" href="{{url('/')}}"> <i class="fa fa-home"></i> Home<span class="sr-only">(current)</span>
+                        <a class="nav-link" href="{{url('/')}}"> <i class="fa fa-home"></i> {{trans('lang.home')}}<span class="sr-only">(current)</span>
                         </a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="{{url('about')}}">About Us</a>
+                        <a class="nav-link" href="{{url('about')}}">
+                          {{trans('lang.About')}}
+                        </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('contact')}}">Contacts Us</a>
+                            <a class="nav-link" href="{{url('contact')}}">
+                              {{trans('lang.contacts')}}
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('free-lance')}}">Join Us as a free lancer</a>
+                            <a class="nav-link" href="{{url('free-lance')}}">{{trans('lang.free')}}</a>
                         </li>
 
 
 
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Our Services
+                            {{trans('lang.serv')}}
                         </a>
                           <div class="dropdown-content">
-                             <a href="{{url('services')}}">IT Services</a>
-                             <a href="{{url('Development')}}">IT Software Development</a>
-                             <a href="{{url('Digital')}}">Digital Marketing</a>
+                             <a href="{{url('services')}}">{{trans('lang.services')}}</a>
+                             <a href="{{url('Development')}}">{{trans('lang.Software')}}</a>
+                             <a href="{{url('Digital')}}">{{trans('lang.marketing')}}</a>
                           </div>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Language
+                                {{trans('lang.language')}}
                             </a>
                              <div class="dropdown-content">
-                              <a href="#">العربية</a>
-                              <a href="#">English</a>
+                              <a href="{{url('lang/ar')}}">العربية</a>
+                              <a href="{{url('lang/en')}}">English</a>
                             </div>
                             </li>
                     </ul>
@@ -104,7 +110,9 @@
               <div class="overlay"></div>
               <div class="container">
                   <div class = "header-information">
-                  <h1>menova services is the best place to serve you in IT solution, Digital Marketing and IT Development</h1>
+                  <h1>
+                    {{trans('lang.what')}}
+                  </h1>
                   </div>
               </div>
           </div>

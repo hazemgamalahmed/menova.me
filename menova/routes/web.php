@@ -10,38 +10,46 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('lang/{lang}', 'langController@index');
+Route::group(['middleware'=>'lang'], function(){
+            Route::get('/', function () {
+            return view('index');
+        });
+        // Route::get('test', 'newsController@test');
+        Route::get('contact', function () {
+            return view('contact');
+        });
+        Route::get('test/1', 'newsController@test');
+        Route::post('insert/customer', 'customerController@insertCustomer');
+        Route::post('insert/serve', 'servicesController@insertServiceOrder');
+        Route::post('insert/free', 'freelanceController@addFreeLancer');
+        Route::post('insert/digital', 'digitalController@insertDigitalClients');
+        Route::post('insert/developers', 'developmentController@insertDevelopment');
+        Route::get('about', function () {
+            return view('About');
+        });
 
-Route::get('/', function () {
-    return view('index');
-});
-// Route::get('test', 'newsController@test');
-Route::get('contact', function () {
-    return view('contact');
-});
-Route::get('test/1', 'newsController@test');
-Route::post('insert/customer', 'customerController@insertCustomer');
-Route::post('insert/serve', 'servicesController@insertServiceOrder');
-Route::post('insert/free', 'freelanceController@addFreeLancer');
-Route::post('insert/digital', 'digitalController@insertDigitalClients');
-Route::post('insert/developers', 'developmentController@insertDevelopment');
-Route::get('about', function () {
-    return view('About');
+        // Route::post('insert/row', 'newsController@insert');
+
+        Route::get('free-lance', function () {
+            return view('IT-free-lance');
+        });
+        Route::get('services', function () {
+            return view('IT-services');
+        });
+        Route::get('Development', function () {
+            return view('IT-Development');
+        });
+        Route::get('Digital', function () {
+            return view('Digital');
+        });
+        Route::get('health/free', 'freelanceController@healthyData');
+        Route::get('educ/free', 'freelanceController@educData');
+        Route::get('agre/free', 'freelanceController@agriData');
+
 });
 
-// Route::post('insert/row', 'newsController@insert');
 
-Route::get('free-lance', function () {
-    return view('IT-free-lance');
-});
-Route::get('services', function () {
-    return view('IT-services');
-});
-Route::get('Development', function () {
-    return view('IT-Development');
-});
-Route::get('Digital', function () {
-    return view('Digital');
-});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

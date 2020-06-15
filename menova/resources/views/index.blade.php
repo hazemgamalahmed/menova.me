@@ -5,8 +5,8 @@
                   <div class="row">
                       <div class = "col-lg-6">
                           <div class = "text-data">
-                              <h1>welcome to menova</h1>
-                              <p>Menova seeks to be Trusted partner for IT Support, IT Solutions, Outsourcing Services and all IT Services in Egypt and Middle East Region.</p>
+                              <h1>{{trans('lang.welcome')}}</h1>
+                              <p>{{trans('lang.seeks')}}</p>
                           </div>
                       </div>
                       <div class = "col-lg-6">

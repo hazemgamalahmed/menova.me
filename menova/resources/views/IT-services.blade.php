@@ -4,29 +4,29 @@
           <!-- start our supprt mation -->
           <div class = "support-menaova">
               <div class="container">
-                  <h1>IT Support</h1>
+                  <h1>{{trans('lang.its')}}</h1>
                   <div class="row">
                       <div class="col-lg-6 col-md-6 col-sm-12">
                           <div class="support-me">
                               <ul>
-                                  <li class="back-face">All Technical Support Services (Onsite and Remote)</li>
-                                  <li class="back-face">IT Infrastructure Services & Building IT Networks </li>
-                                  <li class="back-face">Cameras Networks (Building\installation\Support) </li>
-                                  <li class="back-face">Supporting All Microsoft products (Building & Support)</li>
-                                  <li class="back-face">IT Consultancy</li>
-                                  <li class="back-face">IT Operations</li>
+                                  <li class="back-face">{{trans('lang.ASS')}}</li>
+                                  <li class="back-face">{{trans('lang.infra')}}</li>
+                                  <li class="back-face">{{trans('lang.camer')}}</li>
+                                  <li class="back-face">{{trans('lang.SM')}}</li>
+                                  <li class="back-face">{{trans('lang.ITC')}}</li>
+                                  <li class="back-face">{{trans('lang.ITO')}}</li>
                               </ul>
                           </div>
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12">
                           <div class="support-me">
                               <ul>
-                                  <li class="back-face">Virtualization</li>
-                                  <li class="back-face">Network & Communications</li>
-                                  <li class="back-face">technical Training</li>
-                                  <li class="back-face">Desktop & Device Management</li>
-                                  <li class="back-face">Architecture & Planning</li>
-                                  <li class="back-face">IT Outsourcing Services</li>
+                                  <li class="back-face">{{trans('lang.VRT')}}</li>
+                                  <li class="back-face">{{trans('lang.NNS')}}</li>
+                                  <li class="back-face">{{trans('lang.TT')}}</li>
+                                  <li class="back-face">{{trans('lang.DDM')}}</li>
+                                  <li class="back-face">{{trans('lang.AP')}}</li>
+                                  <li class="back-face">{{trans('lang.TOS')}}</li>
                               </ul>
                           </div>
                       </div>
@@ -38,12 +38,9 @@
           <div class = "our-tools">
               <div class="container">
                   <div class="conten-tools">
-                  <p>Menova delivers different levels of IT Supporting, IT Solutions, IT Outsourcing and all IT Services depending upon the nature and situation of our business partners. However, 
-                      the following is a list of common reasons why Menova
-                       IT Services will be your Choice Trusted Partner in all IT 
-                       Services Supporting
+                  <p>{{trans('lang.MV')}}
                 </p>
-                <button class="my-btn-learn">Learn more</button>
+                
             </div>
               </div>
           </div>
@@ -59,18 +56,18 @@
                 </ul>
                 @endif
                   <div class="form-me">
-                      <h1>let your request</h1>
+                      <h1>{{trans('lang.request')}}</h1>
                       <form class="form-group forms" method="POST" action="{{url('insert/serve')}}">
                         {!! csrf_field() !!}
-                          <label>Name :</label>
+                          <label>{{trans('lang.name')}}</label>
                           <input class="form-control welcome" type="text" name="username"  placeholder="Your Name"/>
-                          <label>Email :</label>
+                          <label>{{trans('lang.email')}}</label>
                           <input class="form-control welcome" type="text" name="email"  placeholder="Your Email"/>
-                          <label>Phone :</label>
+                          <label>{{trans('lang.phone')}}</label>
                           <input class="form-control welcome" type="text" name="phone"  placeholder="Your Phone"/>
-                          <label>message</label>
+                          <label>{{trans('lang.message')}}</label>
                           <textarea name="message" class = "form-control welcome" placeholder="send your message"></textarea>
-                          <button class="my-btn">submit</button>
+                          <button class="my-btn">{{trans('lang.submit')}}</button>
                       </form>
                   </div>
               </div>

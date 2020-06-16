@@ -20,23 +20,23 @@
           <!-- start menaova values -->
           <div class="our-values">
               <div class = "container">
-                 <h1>our values</h1>
+                 <h1>{{trans('lang.values')}}</h1>
                  <div class="row">
                      <div class="col-lg-6 col-md-4 col-sm-12">
                          <div class="value-ex">
                              <ul>
-                             <li class="ser-val">innovation</li>
-                             <li class="ser-val">experiance</li>
-                             <li class="ser-val">flixabilty</li>
+                             <li class="ser-val">{{trans('lang.innovate')}}</li>
+                             <li class="ser-val">{{trans('lang.exper')}}</li>
+                             <li class="ser-val">{{trans('lang.flix')}}</li>
                          </ul>
                          </div>
                      </div>
                      <div class="col-lg-6 col-md-4 col-sm-12">
                          <div class="value-ex">
                              <ul>
-                             <li class="ser-val">excellency</li>
-                             <li class="ser-val">commitment</li>
-                             <li class="ser-val">team work</li>
+                             <li class="ser-val">{{trans('lang.excell')}}</li>
+                             <li class="ser-val">{{trans('lang.comm')}}</li>
+                             <li class="ser-val">{{trans('lang.team')}}</li>
                          </ul>
                          </div>
                      </div>
@@ -48,13 +48,13 @@
           <!-- start our providers -->
           <div class = "providers">
               <div class = "container">
-                  <h1>our services</h1>
+                  <h1>{{trans('lang.serv')}}</h1>
                   <div class = "row">
                       <div class="col-lg-4 col-sm-12 col-md-6">
                           <div class="my-image">
                               <img class = "img-fluid" src="{{url('../public/assets/itsol.jpg')}}" />
                               <a href = "{{url('services')}}"><div class = "caption">
-                                  <h3>IT Development</h3>
+                                  <h3>{{trans('lang.Software')}}</h3>
                               </div></a>
                         
                           
@@ -66,7 +66,7 @@
                         <div class="my-image">
                             <img class = "img-fluid" src="{{url('../public/assets/developIt.jpg')}}" />
                              <a href = "{{url('Development')}}"><div class = "caption">
-                                  <h3>IT support</h3>
+                                  <h3>{{trans('lang.services')}}</h3>
                               </div></a>
                         </div>
 
@@ -75,7 +75,7 @@
                         <div class="my-image">
                             <img class = "img-fluid" src="{{url('../public/assets/Digital.jpg')}}" />
                             <a href = "{{url('Digital')}}"><div class = "caption">
-                                <h3>Digital Marketing</h3>
+                                <h3>{{trans('lang.marketing')}}</h3>
                             </div></a>
 
                         </div>

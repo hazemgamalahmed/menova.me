@@ -7,15 +7,15 @@
                   <div class="row">
                       <div class="col-lg-6 col-md-6 col-sm-12">
                           <div class="choice-me">
-                              <h1>Why we are your choice?</h1>
+                              <h1>{{trans('lang.why')}}</h1>
                               <p>
-                                  We have our experienced teamwork and also have a big network of freelancers with many projects categorized according industries, So  you will get your App in a professional and fast way.
+                                 {{trans('lang.resone')}}
                               </p>
                           </div>
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12">
                           <div class="choice-images">
-                              <img class="image-fluid" src = "assets/choice.jpg">
+                              <img class="image-fluid" src = "{{url('../public/assets/choice.jpg')}}">
                           </div>
                       </div>
                   </div>
@@ -26,16 +26,16 @@
           <div class = "our-tools">
               <div class="container">
                   <div class="conten-tools">
-                  <p>One of Menova Services is to be a trusted partner as a software development house we design and develop professional Business Solutions which are presented to our customers with the most friendly and easy to use interfaces. And we have an experienced teamwork to analysis and develop our client’s needs
+                  <p>{{trans('lang.MSE')}}
                 </p>
-                <p>Our Target </p>
+                <p>{{trans('lang.target')}}</p>
             </div>
               </div>
           </div>
           <!-- end our target -->
           <!-- start our software -->
           <div class = "software">
-              <h1 style="text-align:center">Our Software Developing Fields</h1>
+              <h1 style="text-align:center">{{trans('lang.OSF')}}</h1>
               <div class="container">
                   <div class = "row">
                       <div class="col-lg-4 col-md-6 col-sm-12">
@@ -77,18 +77,18 @@
                 @endforeach
                 @endif
                   <div class="form-me">
-                      <h1>let your request</h1>
+                      <h1>{{trans('lang.request')}}</h1>
                     <form class="form-group forms" method="POST" action="{{url('insert/developers')}}">
                         {!! csrf_field() !!}
-                          <label>Name :</label>
+                          <label>{{trans('lang.name')}}</label>
                           <input class="form-control welcome" type="text" name="username"  placeholder="Your Name"/>
-                          <label>Email :</label>
+                          <label>{{trans('lang.email')}}</label>
                           <input class="form-control welcome" type="text" name="email"  placeholder="Your Email"/>
-                          <label>Phone :</label>
+                          <label>{{trans('lang.phone')}}</label>
                           <input class="form-control welcome" type="text" name="phone"  placeholder="Your Phone"/>
-                          <label>message</label>
+                          <label>{{trans('lang.message')}}</label>
                           <textarea name = "message" class = "form-control welcome" placeholder="send your message"></textarea>
-                          <button class="my-btn">submit</button>
+                          <button class="my-btn">{{trans('lang.submit')}}</button>
                       </form>
                   </div>
               </div>

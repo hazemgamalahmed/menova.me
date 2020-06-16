@@ -3,7 +3,7 @@
 <!-- start works of free lance -->
 <div class="fields">
     <div class = "container">
-        <h1> Choose Your Feild </h1>
+        <h1> {{trans('lang.fields')}} </h1>
         <div class = "row">
             <div class = "col-lg-4 col-md-4 col-sm-12">
                 <div class="free-cat">
@@ -37,7 +37,7 @@
 <!-- free lancers work -->
 <div class = "work-free">
     <div class="container">
-        <h1>free lancres work</h1>
+        <h1>{{trans('lang.work')}}</h1>
         <div class="my-free">
         <div class = "row">
             <div class = "col-lg-6 col-md-12">
@@ -71,18 +71,18 @@
 <div class = "my-form">
               <div class="container">
                   <div class="form-me">
-                      <h1>if you want to work let your personal information</h1>
+                      <h1>{{trans('lang.perfree')}}</h1>
               <form class="form-group forms" method="POST" action="{{url('insert/free')}}" enctype="multipart/form-data">
                         {!! csrf_field() !!}
-                          <label>Name :</label>
-                          <input class="form-control welcome" type="text" name="username"  placeholder="Your Name"/>
-                          <label>Email :</label>
-                          <input class="form-control welcome" type="email" name="email"  placeholder="Your Email"/>
-                          <label>Phone :</label>
-                          <input class="form-control welcome" type="text" name="phone"  placeholder="Your Phone"/>
-                          <label>Your C.V :</label>
+                          <label>{{trans('lang.name')}}</label>
+                          <input class="form-control welcome" type="text" name="username"  placeholder="{{trans('lang.name')}}"/>
+                          <label>{{trans('lang.email')}}</label>
+                          <input class="form-control welcome" type="email" name="email"  placeholder="{{trans('lang.email')}}"/>
+                          <label>{{trans('lang.phone')}}</label>
+                          <input class="form-control welcome" type="text" name="phone"  placeholder="{{trans('lang.phone')}}"/>
+                          <label>{{trans('lang.cv')}}</label>
                           <input class="form-control welcome" type="file" name="file"  placeholder="Your c.v"/>
-                          <label>Your experts</label>
+                          <label>{{trans('lang.experts')}}</label>
                           <select name="major[]" class="form-control" multiple="1">
                             <option disabled="">major job</option>
                               <option value="web">web developer</option>
@@ -95,7 +95,7 @@
                               <option value="graphic">graphic designer</option>
                               <option value="Game-Developer">Game Developer</option>
                           </select>
-                          <label>what is your technologies ?</label>
+                          <label>{{trans('lang.techs')}}</label>
                           <select name = "technologies[]" class="form-control" multiple="" display="1">
                             <option disabled="">web developrt</option>
                             <option value="PHP">PHP</option>
@@ -129,18 +129,18 @@
                             <option value="C">C</option>
                           </select>
 
-                          <label>what about your project</label>
+                          <label>{{trans('lang.project')}}</label>
                           <select class="form-control" name="about">
                             <option disabled="">about</option>
                             <option value="educational">educational</option>
                             <option value="healthy">healthy</option>
                             <option value="agriculture">agriculture</option>
                           </select>
-                          <label>Your Project Demo (if found)</label>
+                          <label>{{trans('lang.demo')}}</label>
                           <input class="form-control" type="text" name="demo" value="" placeholder="demo">
-                          <label>Your project Name (if found) </label>
+                          <label>{{trans('lang.proName')}}</label>
                           <input class="form-control" type="text" name="project" placeholder="Project Name">
-                          <button class="my-btn">submit</button>
+                          <button class="my-btn">{{trans('lang.submit')}}</button>
                       </form>
                   </div>
               </div>

@@ -3,7 +3,7 @@
                   <div class = "row">
                       <div class="col-lg-4 col-md-4 col-sm-12">
                           <div class="any-data">
-                              <h4>Contact Us</h4>
+                              <h4>{{trans('lang.contacts')}}</h4>
                               <ul>
                                   <li>info@menaova.me</li>
                                   <li>+2 0100101010</li>
@@ -12,17 +12,17 @@
                       </div>
                       <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="any-data">
-                            <h4>main Services</h4>
+                            <h4>{{trans('lang.mainSer')}}</h4>
                             <ul>
-                                <li><a href="#">IT Services</a></li>
-                                <li><a href="#">IT Software Development</a></li>
-                                <li><a href="#">Digital Marketing</a></li>
+                                <li><a href="{{url('services')}}">{{trans('lang.services')}}</a></li>
+                                <li><a href="{{url('Development')}}">{{trans('lang.Software')}}</a></li>
+                                <li><a href="{{url('Digital')}}">{{trans('lang.marketing')}}</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="any-data">
-                            <h4>Follow Us</h4>
+                            <h4>{{trans('lang.follow')}}</h4>
                             <ul>
                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
                                 <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> FaceBook</a></li>

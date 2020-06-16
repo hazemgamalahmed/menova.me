@@ -30,25 +30,25 @@
                       @endforeach
                     </ul>
                     @endif
-                      <h1>contact us</h1>
+                      <h1>{{trans('lang.contacts')}}</h1>
                       <form class="form-group forms" method="POST" action="{{url('insert/customer')}}">
                         {!! csrf_field() !!}
-                          <label>Name :</label>
+                          <label>{{trans('lang.name')}} :</label>
                           <input class="form-control welcome" type="text" name="username"  placeholder="Your Name"/>
-                          <label>Email :</label>
+                          <label>{{trans('lang.email')}} :</label>
                           <input class="form-control welcome" type="text" name="email"  placeholder="Your Email"/>
-                          <label>Phone :</label>
+                          <label>{{trans('lang.phone')}} :</label>
                           <input class="form-control welcome" type="text" name="phone"  placeholder="Your Phone"/>
-                          <label>message</label>
+                          <label>{{trans('lang.message')}}</label>
                           <textarea name = "message" class = "form-control welcome" placeholder="send your message"></textarea>
-                          <button class="my-btn">submit</button>
+                          <button class="my-btn">{{trans('lang.submit')}}</button>
                       </form>
                   </div>
               </div>
           </div>
 
            <div class="view view-cascade gradient-card-header peach-gradient">
-        <h5 class="mb-0">Custom map</h5>
+        <h5 class="mb-0" style="text-align:center">{{trans('lang.custom')}}</h5>
       </div>
       <!--/Card image-->
 

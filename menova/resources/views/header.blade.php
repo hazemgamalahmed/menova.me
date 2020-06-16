@@ -46,7 +46,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
                     <div class="container">
                     <a class="navbar-brand" href="#">
-                        <span class="new-serve">Menova</span> 
+                        <span class="new-serve">{{trans('lang.menova')}}</span> 
                       
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,0 +1,32 @@
+.header {
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+
+.our-values {
+  .value {
+    .value-img {
+      transition: 1s ease;
+      width: auto;
+      height: 100px;
+      filter: grayscale(100%);
+      &:hover {
+        filter: grayscale(0);
+       
+      }
+    }
+  }
+}
+
+.bg-img-fixed {
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-img {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

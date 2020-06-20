@@ -1,24 +1,5 @@
 @extends('header')
 @section('content')
-<!-- 
-          <div class = "who-us">
-              <div class="container">
-                  <div class="row">
-                      <div class = "col-lg-6">
-                          <div class = "text-data">
-                              <h1>welcome to menaova services</h1>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto explicabo inventore minus corporis dolores quaerat, 
-                                  minima et velit accusamus impedit omnis debitis, 
-                                  ullam fugit cupiditate rem nulla repudiandae reprehenderit neque.</p>
-                          </div>
-                      </div>
-                      <div class = "col-lg-6">
-                          <img class="img-fluid" src="assets/site-img20.png" />
-                      </div>
-                  </div>
-              </div>
-          </div> -->
-          <!-- end cinema div -->
           <!-- start from -->
           <div class = "my-form">
               <div class="container">

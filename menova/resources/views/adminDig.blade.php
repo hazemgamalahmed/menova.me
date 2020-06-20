@@ -31,5 +31,5 @@
 </table>
 <input type="submit" name="softdelete" value="delete" class="btn btn-danger">
 </form>
-<h1><a href="{{url('dels/data')}}" style="text-decoration:none;color: #f00;">To Trashed Data Of The Digital Marketing <i class="fa fa-trash-o"></i></a></h1>
+<h1><a href="{{url('dels/data')}}" style="text-decoration:none;color: #f00;">To Trashed Data Of The Digital Marketing <i class="fa fa-trash-o text-white"></i></a></h1>
 @endsection

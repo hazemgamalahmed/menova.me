@@ -1,6 +1,5 @@
 @extends('header')
 @section('content')          
-          <!-- end cinema div -->
           <!-- start choice me -->
           <div class="choice-val">
               <div class="container">

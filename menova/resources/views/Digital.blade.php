@@ -6,7 +6,7 @@
                   <div class = "row">
                       <div class="col-lg-4 col-md-6 col-sm-12">
                           <div class = "software-dev">
-                              <img class="image-fluid" src ="assets/desk.png" width = "50%" height="50%" />
+                              <img class="image-fluid" src ="{{ asset('img/desk.png')}}" width = "50%" height="50%" />
                           </div>
                           <div style="text-align:center">
                               <p>SEO Project</p>
@@ -14,7 +14,7 @@
                       </div>
                       <div class="col-lg-4 col-md-6 col-sm-12">
                           <div class = "software-dev">
-                              <img class="image-fluid" src ="assets/web.png" widht="50%" height="50%"/>
+                              <img class="image-fluid" src ="{{ asset('img/web.png')}}" widht="50%" height="50%"/>
                           </div>
                           <div style="text-align:center">
                               <p>Medaia Player</p>
@@ -22,7 +22,7 @@
                       </div>
                       <div class="col-lg-4 col-md-6 col-sm-12">
                           <div class = "software-dev">
-                              <img class="image-fluid" src ="assets/android.png"/>
+                              <img class="image-fluid" src ="{{ asset('img/android.png')}}"/>
                           </div>
                           <div style="text-align:center">
                               <p>FaceBook Adds</p>

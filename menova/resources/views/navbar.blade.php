@@ -58,7 +58,7 @@
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="serve-navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-bell-o text-white"></i>
+            <i class="fa fa-bell text-white"></i>
             {{trans('lang.serv')}}
           </a>
           <ul class="dropdown-menu" aria-labelledby="serve-navbarDropdown">

@@ -8,7 +8,7 @@ return [
   'contacts' => 'Contacts Us',
   'free'  => 'Join as a freelancer',
   'serv'  => 'Our Services',
-  'language' => 'LANGUAGE',
+  'language' => 'Language',
   'services' =>'IT Services',
   'Software' => 'Software Development',
   'marketing' => 'Digital Marketing',

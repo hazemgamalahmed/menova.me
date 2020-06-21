@@ -1,4 +1,7 @@
 @extends('header')
+@section('title')
+Menova
+@endsection
 @section('content')
 <div class="who-us py-5">
   <div class="container">

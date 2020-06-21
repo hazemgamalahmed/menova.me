@@ -1,0 +1,38 @@
+.header {
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+
+.our-values {
+  .value {
+    .value-img {
+      transition: 1s ease;
+      width: auto;
+      height: 100px;
+    }
+  }
+}
+
+
+
+.bg-img-size-100 {
+  background-size: 100% 100%;
+}
+
+
+.support-menaova{
+    margin-top:50px;
+    margin-bottom:50px;
+
+}
+.support-menaova h1{
+    text-align:center;
+}
+.support-menaova .support-me ul{
+    margin-top: 30px;
+}
+.support-menaova .support-me ul li{
+    list-style: none;
+}

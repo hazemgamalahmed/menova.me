@@ -31,5 +31,5 @@
 </table>
 <input type="submit" name="softdelete" value="DELETE" class="btn btn-danger">
 </form>
-<h1><a href="{{url('dels/serve')}}">go to recycle bin <i class="fa fa-trash"></i></a></h1>
+<h1><a href="{{url('dels/serve')}}">go to recycle bin <i class="fa fa-trash text-white"></i></a></h1>
 @endsection

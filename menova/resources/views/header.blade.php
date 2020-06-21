@@ -15,9 +15,7 @@
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-
   @include('navbar')
-
   <div class="header vh-100 position-relative" style="background-image: url({{ asset('img/menova/header-lap.jpg')}})">
     <div class="overlay">
       <div class="container">
@@ -29,12 +27,10 @@
             <p class="text-white mt-4 lh-5 p-0">
               {{trans('lang.what')}}
             </p>
-            <a class="btn btn-success mt-4 px-5" href="{{url('free-lance')}}">@lang('lang.getStarted') <i class="fa fa-long-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
   @yield('content')
   @include('footer')

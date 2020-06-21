@@ -65,10 +65,16 @@ Software Development
 <div class="my-form">
   <div class="container">
     @if($errors->any())
-    @foreach($errors->all() as $my_err)
-    <ul>
-      <li>{{$my_err}}</li>
-    </ul>
+    @foreach($errors->all() as $error)
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-md-8">
+        <ul class="list-unstyled">
+          @foreach($errors->all() as $error)
+          <li class="alert alert-danger">{{$error}}</li>
+          @endforeach
+        </ul>
+      </div>
+    </div>
     @endforeach
     @endif
     <h1>{{trans('lang.request')}}</h1>

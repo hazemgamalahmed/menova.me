@@ -54,12 +54,16 @@ IT Services
 <div class="my-form">
   <div class="container">
     @if($errors->any())
-    <ul>
-      @foreach($errors->all() as $my_er)
-      <li>{{$my_er}}</li>
-      @endforeach
-    </ul>
-    @endif 
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-md-8">
+        <ul class="list-unstyled">
+          @foreach($errors->all() as $error)
+          <li class="alert alert-danger">{{$error}}</li>
+          @endforeach
+        </ul>
+      </div>
+    </div>
+    @endif
     <div class="row justify-content-center my-5">
       <h1 class="text-center">{{trans('lang.request')}}</h1>
       <div class="col-12 col-md-6">

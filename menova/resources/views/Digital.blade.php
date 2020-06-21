@@ -40,9 +40,15 @@ Digital Marketing
 <!-- free lancers work -->
 @if($errors->any())
 @foreach($errors->all() as $error)
-<ul>
-  <li>{{$error}}</li>
-</ul>
+<div class="row align-items-center justify-content-center">
+  <div class="col-12 col-md-8">
+    <ul class="list-unstyled">
+      @foreach($errors->all() as $error)
+      <li class="alert alert-danger">{{$error}}</li>
+      @endforeach
+    </ul>
+  </div>
+</div>
 @endforeach
 @endif
 <div class="my-form my-5">

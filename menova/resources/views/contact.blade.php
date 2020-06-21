@@ -8,11 +8,15 @@ Contact Us
   <div class="container">
     <div class="form-me">
       @if($errors->any())
-      <ul>
-        @foreach($errors->all() as $err)
-        <li>{{$err}}</li>
-        @endforeach
-      </ul>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-md-8">
+          <ul class="list-unstyled">
+            @foreach($errors->all() as $error)
+            <li class="alert alert-danger">{{$error}}</li>
+            @endforeach
+          </ul>
+        </div>
+      </div>
       @endif
       <h1 class="text-center my-5">{{trans('lang.contacts')}}</h1>
       <div class="row justify-content-center align-items-center">

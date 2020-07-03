@@ -1,6 +1,6 @@
 // start design the image
 // collect my Data
-var landingPage = document.querySelector(".cinema");
+var landingPage = document.querySelectorAll(".cinema");
 let myImages = ["download.jpg", "3.jpg", "2.jpg", "images.jpg", "forpa.jpg", "title-bg-about.png"];
 // changing background url
 

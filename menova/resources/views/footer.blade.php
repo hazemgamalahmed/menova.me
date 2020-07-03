@@ -38,14 +38,20 @@
      </div>
      <hr class="m-0 p-0" />
      <div class="text-center p-1">
-      Copyrights &copy all rights reserved menaova.me 2020
+       Copyrights &copy all rights reserved menaova.me 2020
      </div>
    </footer>
    <!-- endfooter footer -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-   <script src="{{ asset('js/map.js') }}" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.js"></script>
+   <script>
+     $(function() {
+       $('.select').multipleSelect()
+     })
+
+   </script>
    <script src="{{ asset('js/main.js') }}"></script>
    </body>
    </html>

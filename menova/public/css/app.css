@@ -23,6 +23,19 @@
   background-repeat: repeat;
 }
 
+.ms-parent.form-select.select {
+  padding: 0;
+  border: 0;
+}
+
+.ms-parent.form-select.select .ms-choice {
+  height: 100%;
+}
+
+.ms-parent.form-select.select .ms-choice span {
+  padding: 4px 10px;
+}
+
 .main-nav {
   position: -webkit-sticky !important;
   position: sticky !important;

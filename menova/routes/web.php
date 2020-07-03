@@ -31,7 +31,7 @@ Route::group(['middleware'=>'lang'], function(){
 
         // Route::post('insert/row', 'newsController@insert');
 
-        Route::get('free-lance', function () {
+        Route::get('get-started', function () {
             return view('IT-free-lance');
         });
         Route::get('services', function () {

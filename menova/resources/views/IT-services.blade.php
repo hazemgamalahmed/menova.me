@@ -43,44 +43,10 @@ IT Services
 <div class="our-tools">
   <div class="container">
     <div class="conten-tools w-75 text-center m-auto">
-      <p>{{trans('lang.MV')}}
+      <p>
+        {{trans('lang.MV')}}
       </p>
-
     </div>
   </div>
 </div>
-<!-- end menaova levels -->
-<!-- start contact it services -->
-<div class="my-form">
-  <div class="container">
-    @if($errors->any())
-    <div class="row align-items-center justify-content-center">
-      <div class="col-12 col-md-8">
-        <ul class="list-unstyled">
-          @foreach($errors->all() as $error)
-          <li class="alert alert-danger">{{$error}}</li>
-          @endforeach
-        </ul>
-      </div>
-    </div>
-    @endif
-    <div class="row justify-content-center my-5">
-      <h1 class="text-center">{{trans('lang.request')}}</h1>
-      <div class="col-12 col-md-6">
-        <div class="form-group forms" method="POST" action="{{url('insert/serve')}}">
-          {!! csrf_field() !!}
-          <label>{{trans('lang.name')}}</label>
-          <input class="form-control my-2 welcome" type="text" name="username" placeholder="Your Name" />
-          <label>{{trans('lang.email')}}</label>
-          <input class="form-control my-2 welcome" type="text" name="email" placeholder="Your Email" />
-          <label>{{trans('lang.phone')}}</label>
-          <input class="form-control my-2 welcome" type="text" name="phone" placeholder="Your Phone" />
-          <label>{{trans('lang.message')}}</label>
-          <textarea name="message my-2" class="form-control welcome" placeholder="send your message"></textarea>
-          <button class="btn btn-block btn-success my-2">{{trans('lang.submit')}} <i class="fa fa-send"></i></button>
-        </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  @endsection
+@endsection

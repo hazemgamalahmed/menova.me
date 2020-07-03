@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="col-12 col-md-auto text-black-50">
-        <i class="fa fa-envelope" aria-hidden="true"></i> <span>menova@menova.com</span>
+        <i class="fa fa-envelope" aria-hidden="true"></i> <a class="text-black-50 text-decoration-none" href="mailto:menova@menova.com">menova@menova.com</a>
       </div>
       <div class="col text-right align-self-end">
         <i class="fa fa-smile-o" aria-hidden="true"></i><span>

@@ -68,22 +68,26 @@ Menova
       <h2 class="text-center text-white my-5">{{trans('lang.serv')}}</h2>
       <div class="row my-3">
         <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
-          <div class="card">
+          <a href="{{url('/Development')}}"><div class="card">
             <img style="height: 250px;width: auto;" class="value-img img-fluid my-4" src="{{asset('img/menova/vector_banner_web_dev.png')}}">
             <h4 class="ser-val my-3">{{trans('lang.Software')}}</h4>
           </div>
+          </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
-          <div class="card px-3">
+          <a href="{{url('/services')}}">
+            <div class="card px-3">
             <img style="height: 250px;width: auto;" class="value-img img-fluid my-4" src="{{asset('img/menova/it.png')}}">
             <h4 class="ser-val my-3">{{trans('lang.services')}}</h4>
           </div>
+          </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
-          <div class="card">
+          <a href="{{url('/Digital')}}"><div class="card">
             <img style="height: 250px;width: auto;" class="value-img img-fluid my-4" src="{{asset('img/menova/Marketing.png')}}">
             <h4 class="ser-val my-3">{{trans('lang.marketing')}}</h4>
           </div>
+          </a>
         </div>
 
       </div>

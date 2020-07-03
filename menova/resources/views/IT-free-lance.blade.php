@@ -30,77 +30,94 @@ Freelancer
       <div class="my-form">
         <div class="container">
           <div class="form-me">
-            <h3 class="text-center">{{trans('lang.perfree')}}</h3>
+            <h3 class="text-center my-4">{{trans('lang.perfree')}}</h3>
             <form class="form-group forms" method="POST" action="{{url('insert/free')}}" enctype="multipart/form-data">
               {!! csrf_field() !!}
-              <label class="form-label">{{trans('lang.name')}}</label>
+              <label class="font-weight-bold form-label">{{trans('lang.name')}}</label>
               <input class="form-control mb-4 welcome" type="text" name="username" placeholder="{{trans('lang.name')}}" />
-              <label class="form-label">{{trans('lang.email')}}</label>
+              <label class="font-weight-bold form-label">{{trans('lang.email')}}</label>
               <input class="form-control mb-4 welcome" type="email" name="email" placeholder="{{trans('lang.email')}}" />
-              <label class="form-label">{{trans('lang.phone')}}</label>
+              <label class="font-weight-bold form-label">{{trans('lang.phone')}}</label>
               <input class="form-control mb-4 welcome" type="text" name="phone" placeholder="{{trans('lang.phone')}}" />
 
+              <label class="font-weight-bold form-file-label" for="customFile">Upload Your C.V</label>
               <div class="form-file">
                 <input type="file" name="file" class="form-file-input" id="customFile">
-                <label class="form-file-label" for="customFile">
+                <label class="font-weight-bold form-file-label" for="customFile">
                   <span class="form-file-text">{{trans('lang.cv')}}</span>
                   <span class="form-file-button">Upload</span>
                 </label>
               </div>
 
+              @php
+              $experts = array(
+              'major_job' => 'major job',
+              'web_development' => 'web development',
+              'android_development' => 'android development',
+              'IOS_development' => 'ios development',
+              'desktop_app' => 'desktop development',
+              'Digital_marketing' => 'digital marketing',
+              'IT_Support' => 'IT Support',
+              'graphic_designer' => 'graphic designer',
+              'Game_development' => 'game development',
+              );
 
-              <label class="form-label">{{trans('lang.experts')}}</label>
-              <select name="major[]" class="form-control select-multiple" multiple="1">
-                <option disabled="">major job</option>
-                <option value="web">web developer</option>
-                <option value="desktop">desktop app</option>
-                <option value="android">android developer</option>
-                <option value="Ios">IOS developer</option>
-                <option value="Digital">Digital marketing</option>
-                <option value="IT-Support">IT-Support</option>
-                <option value="photoshop">photoshop</option>
-                <option value="graphic">graphic designer</option>
-                <option value="Game-Developer">Game Developer</option>
+              $techs_web = array(
+              'html' => 'html',
+              'css' => 'css',
+              'wordpress' => 'wordpress',
+              'java_script' => 'java script',
+              'php' => 'php',
+              'laravle' => 'laravle',
+              'mysql' => 'mysql',
+              'python' => 'python',
+              'c#' => 'c#',
+              'bootstrap' => 'bootstrap',
+              'sass' => 'sass',
+              'ue' => 'vue',
+              'angular' => 'angular',
+              'react' => 'react',
+              );
+
+              function chosen_value($option) {
+              return $option;
+              }
+
+              @endphp
+
+              <label class="font-weight-bold form-label mt-3">{{trans('lang.experts')}}</label>
+              <select class="form-select text-capitalize" name="chosen_value[]">
+                @foreach($experts as $key => $value)
+                <option class="text-capitalize form-select" vlaue="{{$key}}">{{$value}}</option>
+                @endforeach
               </select>
-              <label class="form-label">{{trans('lang.techs')}}</label>
-              <select name="technologies[]" class="form-control" multiple="" display="1">
-                <option disabled="">web developrt</option>
-                <option value="PHP">PHP</option>
-                <option value="C#">C#</option>
-                <option value="JS">JS</option>
-                <option value="Java">Java</option>
-                <option value="Python">Python</option>
-                <option value="Ruby">Ruby</option>
-                <option disabled="">Desktop Developer</option>
-                <option value="Java">Java</option>
-                <option value="C#">C#</option>
-                <option value="C++">C++</option>
-                <option disabled="">Mobile App Developer</option>
-                <option value="Kotlin">Kotlin</option>
-                <option value="Dart">Dart</option>
-                <option value="Objective-c">Objective-c</option>
-                <option value="Java">Java</option>
-                <option value="Python">Python</option>
-                <option value="Swift">Swift</option>
-                <option disabled="">Game Developer</option>
-                <option value="Java">Java</option>
-                <option value="C++">C++</option>
-                <option value="Python">Python</option>
-                <option value="JS">JS</option>
-                <option value="Ruby">Ruby</option>
-                <option value="C">C</option>
+              <br />
+              <label class="font-weight-bold form-label mt-3">{{trans('lang.techs')}}</label>
+
+              <!-- Multiple Select -->
+              @if(true)
+              <select class="form-select select" multiple="multiple">
+                @foreach($techs_web as $key => $value)
+                <option class="text-capitalize" vlaue="{{$key}}">{{$value}}</option>
+                @endforeach
               </select>
-              <label class="form-label">{{trans('lang.project')}}</label>
+              @endif
+              <!-- Multiple Select -->
+
+
+
+              <label class="font-weight-bold form-label mt-3">{{trans('lang.project')}}</label>
               <select class="form-control" name="about">
-                <option disabled="">about</option>
+                <option value="about</">about</option>
                 <option value="educational">educational</option>
                 <option value="healthy">healthy</option>
                 <option value="agriculture">agriculture</option>
               </select>
-              <label class="form-label">{{trans('lang.demo')}}</label>
+              <label class="font-weight-bold form-label mt-3">{{trans('lang.demo')}}</label>
               <input class="form-control mb-4" type="text" name="demo" value="" placeholder="demo">
-              <label class="form-label">{{trans('lang.proName')}}</label>
+              <label class="font-weight-bold form-label">{{trans('lang.proName')}}</label>
               <input class="form-control mb-4" type="text" name="project" placeholder="Project Name">
+
               <button class="btn btn-block btn-success mt-4">{{trans('lang.submit')}}</button>
             </form>
           </div>
